@@ -13,6 +13,8 @@ int main()
         printf("i=%d\n", i);
     }
 
+    puts("---");
+
     // TASK A - count from 10 down to 0 in steps of -1
 
     // TASK B - count from 10 down to -10 in steps of -2
