@@ -20,6 +20,8 @@ int main()
 {
     //Some constants 
     const int high = 100, low = 10;
+    
+
 
     // start filling the tank 
     int level = 5;
@@ -35,6 +37,11 @@ int main()
     if (level == 0) {
         cout << "Tank is empty" << endl;
     }
+    else
+
+    {
+        cout << "Tank is not empty" << endl;
+    }
 
     if (level <= low)                       // check the level
     {
@@ -43,11 +50,19 @@ int main()
     else
     {
         cout << "Tank has sufficient fuel for now" << endl;
+        
     }
 
     if (level == high)                       // monitor the level
     {
         cout << "Tank is full" << endl;
     }
+    else
 
+    {
+        cout << "Tank is not full" << endl;
+    }
+
+  
+    
 }
