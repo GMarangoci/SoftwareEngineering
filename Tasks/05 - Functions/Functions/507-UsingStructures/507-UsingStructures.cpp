@@ -12,6 +12,7 @@ struct Point {
 void displayPoint(Point p);
 float calculateLength(Point p);
 Point flipPoint(Point p);
+point addpoint(Point p1, Point p2);
 
 
 int main()
@@ -50,6 +51,10 @@ int main()
 
 }
 
+Point p5 = addpoint(p1, p2);
+cout << "the result of adding p1 and p2 is :";
+displayPoint(p5);
+cout << "with lenght" << p.5.length << endl;
 
 // Displays a point as an x,y coordinate
 void displayPoint(Point p)
@@ -75,4 +80,13 @@ Point flipPoint(Point p)
     result.y = p.x;
     result.length = p.length;
     return result;
+}
+
+point addpoint(Point p1, Point p2)
+{
+	Point result;
+	result.x = p1.x + p2.x;
+	result.y = p1.y + p2.y;
+	result.length = calculateLength(result);
+	return result;
 }

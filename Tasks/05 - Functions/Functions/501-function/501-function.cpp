@@ -3,9 +3,17 @@ using namespace std;
 
 int L;		//This is not an ideal location - we will soon address this
 
+
+void displayBanner(int L)
+{
+	for (unsigned int n = 0; n < (L + 4); n++) {
+		cout << "*";
+	}
+	cout << endl;
+}
 int main()
 {
-	const string message = "Welcome to Computer Science";
+	const string message = "Welcome to Computer Science Students";
 	
 	//Get the length of the string
 	L = message.length();
