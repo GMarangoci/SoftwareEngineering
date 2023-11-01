@@ -46,6 +46,13 @@ int main()
             cout << "Found \"ID:\". The code should be next...." << endl;
             //TODO:
             // Read the next word
+        iss>> nextWord;
+        if (!iss.fail()) {
+            moduleNumber = stoi(nextWord);
+            cout<< "COMP" << moduleNumber + 1 << endl;
+            break;
+            }
+
             // If successful, try to convert to an integer then break from the while loop
         }
     }

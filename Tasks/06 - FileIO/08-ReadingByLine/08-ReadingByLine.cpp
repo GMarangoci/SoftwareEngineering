@@ -48,7 +48,16 @@ int main()
 
     // Use a loop to read all remaining lines
     // Hint - `inputStream.eof()` to check if the end of file character was read
+    while (getline(inputStream, nextline)) {
+    allLines = allLines + nextLine + "\n";
+    }
 
+    if (inputStream.eof()) {
+		cout << "The last read found an EOF marker" << endl;
+    }
+    else if (inputStream.fail()) {
+        cout << "The last read failed" << endl;
+    }
 
 
 
